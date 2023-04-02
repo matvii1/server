@@ -6,9 +6,9 @@ import {
   authRouter,
   commentsRouter,
   postRouter,
+  tagsRouter,
   uploadsRouter,
-} from './routes/index.js'
-import tagsRouter from './routes/tagsRouter.js'
+} from './src/routes/index.js'
 dotenv.config()
 
 const app = express()
