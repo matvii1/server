@@ -1,6 +1,6 @@
 import express from 'express'
 import commentsController from '../controllers/commentsController.js'
-import { authMiddleware } from '../middlewares/authMiddleWare.js'
+import { authMiddleware } from '../middlewares/authMiddleware.js'
 import { validateMiddleware } from '../middlewares/validateMiddleware.js'
 import { commentValidation } from '../validations/postValidation.js'
 
