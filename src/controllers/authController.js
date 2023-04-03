@@ -32,7 +32,7 @@ class AuthController {
         {
           _id: user._id,
         },
-        process.env.SECRET,
+        process.env.JWT_SECRET,
         {
           expiresIn: '30d',
         }
@@ -81,7 +81,7 @@ class AuthController {
         {
           _id: foundUser._id,
         },
-        process.env.SECRET,
+        process.env.JWT_SECRET,
         {
           expiresIn: '30d',
         }
