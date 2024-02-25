@@ -28,15 +28,9 @@ class AuthController {
 
       const user = await doc.save()
 
-      const token = jwt.sign(
-        {
-          _id: user._id,
-        },
-        process.env.JWT_SECRET,
-        {
-          expiresIn: '30d',
-        }
-      )
+      const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, {
+        expiresIn: '30d',
+      })
 
       const {
         password: { _ },
